@@ -310,3 +310,88 @@ header.scroll-nav {
   letter-spacing: 0.09em;
   opacity: 0.1;
 }
+
+/* Service */
+.main_service {
+  width: 100%;
+  height: 660px;
+  margin-top: 96px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.main_service > p {
+  position: absolute;
+  left: 230px;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding-right: 230px;
+}
+
+.main_service > p:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 41px;
+  right: 0;
+  width: 200px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: black;
+}
+
+.imgs {
+  position: absolute;
+  top: 162px;
+  width: 100%;
+  height: 320px;
+  display: flex;
+}
+
+.imgs-1 {
+  position: relative;
+}
+
+.imgs-1 p {
+  position: absolute;
+  top: 132px;
+  left: 148px;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  color: white;
+}
+
+@media screen and (min-width: 1425px) {
+  .imgs-1 {
+    position: relative;
+    width: 100%;
+  }
+
+  .imgs-1 img {
+    width: 100%;
+    height: 320px;
+  }
+
+  .imgs-1 p {
+    position: absolute;
+    top: 135px;
+    left: 233px;
+  }
+}
+
+.sub_service p {
+  position: absolute;
+  top: 552px;
+  right: 120px;
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  opacity: 0.1;
+  margin: 0;
+}
