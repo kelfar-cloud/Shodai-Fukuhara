@@ -59,12 +59,14 @@ header.scroll-nav {
   cursor: pointer;
 }
 
-.logo {
+#logo > p > a {
   font-size: 26px;
   color: white;
   margin-left: 120px;
   font-style: italic;
   letter-spacing: 0.1em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* slide */
@@ -143,10 +145,60 @@ header.scroll-nav {
 }
 
 .our_concept > h2 {
+  padding-right: 300px;
   margin-top: 100px;
   margin-left: 220px;
   font-size: 60px;
   font-style: italic;
   letter-spacing: 00.1em;
   font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.our_concept > h2:after {
+  content: "";
+  position: absolute;
+  top: 41px;
+  right: 30px;
+  height: 5px;
+  width: 200px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.our_concept > p {
+  margin-top: 20px;
+  margin-left: 420px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.explanation {
+  display: flex;
+  align-items: center;
+}
+
+.explanation > p {
+  display: inline-block;
+  width: 440px;
+  height: 146px;
+  font-size: 16px;
+  margin-left: 220px;
+  font-weight: bold;
+}
+
+.explanation > img {
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+.our_concept > h3 {
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 705px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  opacity: 0.1;
 }
