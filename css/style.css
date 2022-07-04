@@ -103,7 +103,7 @@ body {
   38% {
     opacity: 0;
   }
-  
+
   100% {
     opacity: 0;
   }
@@ -130,3 +130,13 @@ body {
   font-weight: bold;
 }
 
+/* CONCEPT */
+.our_concept {
+  width: 100%;
+  height: 909px;
+}
+
+.our_concept > h2 {
+  margin-top: 100px;
+  margin-left: 220px;
+}
