@@ -28,7 +28,13 @@ body {
   justify-content: space-between;
   text-align: center;
   background-color: transparent;
-  margin-top: 19px;
+  padding-top: 19px;
+  transition: all 0.5s;
+}
+
+header.scroll-nav {
+  background-color: #282f35;
+  padding: 30px 15px;
 }
 
 #header_menu {
@@ -139,4 +145,8 @@ body {
 .our_concept > h2 {
   margin-top: 100px;
   margin-left: 220px;
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 00.1em;
+  font-weight: bold;
 }
