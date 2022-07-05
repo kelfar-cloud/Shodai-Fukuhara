@@ -355,10 +355,21 @@ header.scroll-nav {
   position: relative;
 }
 
+.imgs-1 img {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.imgs-1 img:hover {
+  filter: brightness(60%);
+  transform: scale(0.9);
+}
+
 .imgs-1 p {
   position: absolute;
-  top: 132px;
-  left: 148px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 40px;
   font-style: italic;
   font-weight: bold;
@@ -367,7 +378,7 @@ header.scroll-nav {
   color: white;
 }
 
-@media screen and (min-width: 1425px) {
+@media screen and (min-width: 1450px) {
   .imgs-1 {
     position: relative;
     width: 100%;
@@ -380,8 +391,9 @@ header.scroll-nav {
 
   .imgs-1 p {
     position: absolute;
-    top: 135px;
-    left: 233px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -394,4 +406,120 @@ header.scroll-nav {
   letter-spacing: 0.1em;
   opacity: 0.1;
   margin: 0;
+}
+
+
+/* Contact */
+.main_contact {
+  width: 100%;
+  height: 666px;
+  position: relative;
+}
+
+.main_contact > img {
+  width: 100%;
+  height: 100%;
+}
+
+.main_contact > p {
+  position: absolute;
+  top: 109px;
+  right: 0;
+  padding-right: 350px;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.main_contact > p:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 41px;
+  right: 120px;
+  width: 200px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.comment > p {
+  position: absolute;
+  top: 271px;
+  right: 580px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.comment > button {
+  position: absolute;
+  top: 345px;
+  left: 603px;
+  display: inline-block;
+  width: 235px;
+  height: 59px;
+  border-style: none;
+  font-weight: bold;
+  background-color: yellow;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 50px;
+}
+
+.comment > button:hover {
+  background-color: black;
+  color: yellow;
+  letter-spacing: 3px;
+}
+
+.contact_us > p {
+  position: absolute;
+  top: 474px;
+  left: 120px;
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: white;
+  margin: 0;
+  opacity: 0.1;
+}
+
+@media screen and (min-width: 1450px) {
+  .comment > p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+  }
+
+  .comment > button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-65%);
+  }
+}
+
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: 79px;
+}
+
+footer > p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
